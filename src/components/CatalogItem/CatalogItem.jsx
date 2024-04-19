@@ -1,6 +1,25 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, Img, Image, Wrapper, CurrentInfo, Title, Price, FavoriteHeartBtn } from './CatalogItem.styled';
+import Icon from '../Icon';
+import { selectFavorites } from '../../redux/vans/selectors';
+import {
+  Card,
+  Img,
+  Image,
+  Wrapper,
+  CurrentInfo,
+  Title,
+  Price,
+  FavoriteHeartBtn,
+  CurrentStar,
+  StarCont,
+  Location,
+  Description,
+  FillingTheVan,
+  FillingItem,
+} from './CatalogItem.styled';
+import {formatPrice, reverseLocation, capitalize } from '../../helpers/helpers'
+
 
 const VanItem = ({ van }) => {
   const dispatch = useDispatch();
@@ -18,6 +37,7 @@ const VanItem = ({ van }) => {
     engine,
     details,
   } = van;
+
   const isFavorite = favorites.find(item => item._id === van._id);
   const formattedPrice = formatPrice(price);
   const renderLocation = reverseLocation(location);
@@ -54,12 +74,52 @@ const VanItem = ({ van }) => {
               }
               $isFavorite={isFavorite}
             >
-              <FavoriteHeart size={24} />
+              <Icon name="icon-heart" size={24} />
             </FavoriteHeartBtn>
           </CurrentInfo>
+          <CurrentStar>
+            <StarCont>
+              <Icon name="icon-star" size={14} color={'var(--color-rating)'} />
+              <span>
+                {rating}({van.rewies.length}) rewies
+              </span>
+              <Location>
+                <Icon name="icon-location" size={16} />
+                <span> {renderLocation}</span>
+              </Location>
+            </StarCont>
+          </CurrentStar>
+          <Description>{description}</Description>
+          <FillingTheVan>
+            <FillingItem>
+              <Icon name="icon-adults" size={20} />
+              <span>{adults} Adults</span>
+            </FillingItem>
+            <FillingItem>
+              <Icon name="icon-automatic" size={20} />
+              <span>{capitalize(transmission)}</span>
+            </FillingItem>
+            <FillingItem>
+              <Icon name="icon-petrol" size={20} />
+              <span>{capitalize(engine)}</span>
+            </FillingItem>
+            <FillingItem>
+              <Icon name="icon-kitchen" size={20} />
+              <span> {details.kitchen} Kitchen</span>
+            </FillingItem>
+            <FillingItem>
+              <Icon name="icon-beds" size={20} />
+              <span> {details.beds} beds</span>
+            </FillingItem>
+            <FillingItem>
+              <Icon name="icon-ac" size={20} />
+              <span> AC </span>
+            </FillingItem>
+          </FillingTheVan>
         </WrapperCont>
         <Button onClick={openModal}>Show more</Button>
       </Wrapper>
+      {isModalOpen && <Modal advert={advert} closeModal={closeModal} />}
     </Card>
   );
 };

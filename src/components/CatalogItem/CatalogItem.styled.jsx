@@ -20,7 +20,6 @@ export const Image = styled.img`
   object-fit: cover;
 `;
 
-
 export const Wrapper = styled.div`
   display: flex;
   width: 526px;
@@ -30,11 +29,9 @@ export const Wrapper = styled.div`
   flex-shrink: 0;
 `;
 
-
 export const WrapperCont = styled.div`
- width: 100%;
+  width: 100%;
 `;
-
 
 export const CurrentInfo = styled.div`
   display: flex;
@@ -57,7 +54,6 @@ export const Price = styled.h2`
   margin-left: auto;
 `;
 
-
 export const FavoriteHeartBtn = styled.button`
   background: none;
   margin-left: 11px;
@@ -70,3 +66,45 @@ export const FavoriteHeartBtn = styled.button`
   }
 `;
 
+export const CurrentStar = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+export const StarCont = styled.div`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration-line: underline;
+`;
+
+export const Location = styled.div`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+`;
+
+export const Description = styled.p`
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--color-main);
+`;
+
+export const FillingTheVan = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
+
+export const FillingItem = styled.div`
+  display: flex;
+  padding: 12px 18px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: var(--color-block);
+  line-height: 1.25;
+  font-weight: 500;
+`;
