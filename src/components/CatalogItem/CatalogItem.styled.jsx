@@ -11,15 +11,6 @@ export const Card = styled.div`
   width: 888px;
 `;
 
-export const Img = styled.div``;
-
-export const Image = styled.img`
-  border-radius: 10px;
-  width: 290px;
-  height: 310px;
-  object-fit: cover;
-`;
-
 export const Wrapper = styled.div`
   display: flex;
   width: 526px;

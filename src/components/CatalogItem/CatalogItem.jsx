@@ -2,11 +2,10 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Icon from '../Icon';
 import { selectFavorites } from '../../redux/vans/selectors';
+import {addToFavorites, removeFromFavorites} from '../../redux/vans/slice'
 import {
   Card,
-  Img,
-  Image,
-  Wrapper,
+   Wrapper,
   WrapperCont,
   CurrentInfo,
   Title,
@@ -18,10 +17,13 @@ import {
   Description,
   FillingTheVan,
   FillingItem,
-  Button
+  Button,
 } from './CatalogItem.styled';
-import {formatPrice, reverseLocation, capitalize } from '../../helpers/helpers'
-
+import {
+  formatPrice,
+  reverseLocation,
+  capitalize,
+} from '../../helpers/helpers';
 
 const VanItem = ({ van }) => {
   const dispatch = useDispatch();
@@ -56,13 +58,6 @@ const VanItem = ({ van }) => {
 
   return (
     <Card>
-      <Img>
-        {van.gallery && van.gallery.length > 0 ? (
-          <Image src={van.gallery[0]} alt={name} />
-        ) : (
-          <DefaultImage alt="no photo" />
-        )}
-      </Img>
       <Wrapper>
         <WrapperCont>
           <CurrentInfo>

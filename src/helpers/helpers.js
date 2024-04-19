@@ -26,3 +26,4 @@ export const handlePending = state => {
     return location.split(', ').reverse().join(', ');
   };
   
+ 
