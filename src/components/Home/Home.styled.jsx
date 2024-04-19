@@ -24,20 +24,4 @@ export const Button = styled.button`
   }
 `;
 
-export const LoadMoreBtn = styled.button`
-  padding: 16px 32px;
-  width: 147px;
-  align-items: center;
-  border-radius: 200px;
-  border: 1px solid rgba(71, 84, 103, 0.2);
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: -0.08px;
-  transition: transform 0.5s, border 0.5s ease-in-out;
 
-  &:hover,
-  &:focus {
-    border: 1px solid var(--color-button-hover);
-    transform: scale(1.05);
-  }
-`;

@@ -10,3 +10,5 @@ const Home = () => {
     </HomeCont>
   );
 };
+
+export default Home;

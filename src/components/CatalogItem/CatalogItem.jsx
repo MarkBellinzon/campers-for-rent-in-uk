@@ -7,6 +7,7 @@ import {
   Img,
   Image,
   Wrapper,
+  WrapperCont,
   CurrentInfo,
   Title,
   Price,
@@ -17,6 +18,7 @@ import {
   Description,
   FillingTheVan,
   FillingItem,
+  Button
 } from './CatalogItem.styled';
 import {formatPrice, reverseLocation, capitalize } from '../../helpers/helpers'
 
@@ -119,7 +121,7 @@ const VanItem = ({ van }) => {
         </WrapperCont>
         <Button onClick={openModal}>Show more</Button>
       </Wrapper>
-      {isModalOpen && <Modal advert={advert} closeModal={closeModal} />}
+      {isModalOpen && <Modal van={van} closeModal={closeModal} />}
     </Card>
   );
 };
