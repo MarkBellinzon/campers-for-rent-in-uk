@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/campers-for-rent-in-uk/static/css/main.b96a09e0.css",
+    "main.js": "/campers-for-rent-in-uk/static/js/main.180e4d45.js",
+    "static/js/553.65f45bf0.chunk.js": "/campers-for-rent-in-uk/static/js/553.65f45bf0.chunk.js",
+    "static/js/69.887ae5a2.chunk.js": "/campers-for-rent-in-uk/static/js/69.887ae5a2.chunk.js",
+    "static/js/697.b65e2029.chunk.js": "/campers-for-rent-in-uk/static/js/697.b65e2029.chunk.js",
+    "static/js/137.4a1447c4.chunk.js": "/campers-for-rent-in-uk/static/js/137.4a1447c4.chunk.js",
+    "index.html": "/campers-for-rent-in-uk/index.html",
+    "main.b96a09e0.css.map": "/campers-for-rent-in-uk/static/css/main.b96a09e0.css.map",
+    "main.180e4d45.js.map": "/campers-for-rent-in-uk/static/js/main.180e4d45.js.map",
+    "553.65f45bf0.chunk.js.map": "/campers-for-rent-in-uk/static/js/553.65f45bf0.chunk.js.map",
+    "137.4a1447c4.chunk.js.map": "/campers-for-rent-in-uk/static/js/137.4a1447c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b96a09e0.css",
+    "static/js/main.180e4d45.js"
+  ]
+}
