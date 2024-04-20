@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Button } from './Home.styled';
+import { Button, HomeCont } from './Home.styled';
 
 const Home = () => {
   return (

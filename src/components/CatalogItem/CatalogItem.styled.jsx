@@ -57,12 +57,12 @@ export const FavoriteHeartBtn = styled.button`
   }
 `;
 
-export const CurrentStar = styled.div`
+export const RatingWrapper = styled.div`
   display: flex;
   gap: 16px;
 `;
 
-export const StarCont = styled.div`
+export const RatingCont = styled.div`
   display: flex;
   gap: 4px;
   align-items: center;

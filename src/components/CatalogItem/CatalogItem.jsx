@@ -11,8 +11,8 @@ import {
   Title,
   Price,
   FavoriteHeartBtn,
-  CurrentStar,
-  StarCont,
+  RatingWrapper,
+  RatingCont,
   Location,
   Description,
   FillingTheVan,
@@ -74,8 +74,8 @@ const VanItem = ({ van }) => {
               <Icon name="icon-heart" size={24} />
             </FavoriteHeartBtn>
           </CurrentInfo>
-          <CurrentStar>
-            <StarCont>
+          <RatingWrapper>
+            <RatingCont>
               <Icon name="icon-star" size={14} color={'var(--color-rating)'} />
               <span>
                 {rating}({van.rewies.length}) rewies
@@ -84,8 +84,8 @@ const VanItem = ({ van }) => {
                 <Icon name="icon-location" size={16} />
                 <span> {renderLocation}</span>
               </Location>
-            </StarCont>
-          </CurrentStar>
+            </RatingCont>
+          </RatingWrapper>
           <Description>{description}</Description>
           <FillingTheVan>
             <FillingItem>

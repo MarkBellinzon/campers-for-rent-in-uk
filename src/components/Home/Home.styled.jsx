@@ -24,4 +24,16 @@ export const Button = styled.button`
   }
 `;
 
+export const HomeCont = styled.div`
+      display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  padding-left: 100px;
+  color:#ffffff;
+  max-width: 800px;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+`;
+
 
