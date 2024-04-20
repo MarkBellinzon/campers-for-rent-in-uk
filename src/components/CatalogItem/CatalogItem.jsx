@@ -24,6 +24,9 @@ import {
   reverseLocation,
   capitalize,
 } from '../../helpers/helpers';
+import Modal from 'components/Modal/Modal';
+
+
 
 const VanItem = ({ van }) => {
   const dispatch = useDispatch();
