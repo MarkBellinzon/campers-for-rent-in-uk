@@ -1,10 +1,10 @@
-import {Header, Link, NavList} from './Header.styled';
+import {HeaderWrap, Link, NavList} from './Header.styled';
 
 
 const Header = () => {
   return (
     <>
-      <Header>
+      <HeaderWrap>
         <NavList>
           <li>
             <Link to="/">Home</Link>
@@ -16,7 +16,7 @@ const Header = () => {
             <Link to="/favorites">Favorites</Link>
           </li>
         </NavList>
-      </Header>
+      </HeaderWrap>
 
       <Suspense fallback={<Loader />}>
         <Outlet />
@@ -24,3 +24,5 @@ const Header = () => {
     </>
   );
 };
+
+export default Header;
