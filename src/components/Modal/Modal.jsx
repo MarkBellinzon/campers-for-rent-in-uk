@@ -2,7 +2,9 @@ import { useRef, useState, useEffect } from 'react';
 import Icon from '../Icon/Icon';
 import { formatPrice, reverseLocation } from '../../helpers/helpers';
 import { Title, Location, Price,  RatingWrapper, RatingCont, } from '../../components/CatalogItem/CatalogItem.styled';
-
+import {BookingForm} from 'components/BookingForm/BookingForm';
+import {Reviews} from 'components/Reviews/Reviews';
+import {Features} from 'components/Features/Features';
 
 import {
   ModalWrapper,
