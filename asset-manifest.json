@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/campers-for-rent-in-uk/static/css/main.b96a09e0.css",
-    "main.js": "/campers-for-rent-in-uk/static/js/main.df847019.js",
-    "static/js/808.8adcd81c.chunk.js": "/campers-for-rent-in-uk/static/js/808.8adcd81c.chunk.js",
-    "static/js/69.887ae5a2.chunk.js": "/campers-for-rent-in-uk/static/js/69.887ae5a2.chunk.js",
-    "static/js/697.b65e2029.chunk.js": "/campers-for-rent-in-uk/static/js/697.b65e2029.chunk.js",
+    "main.css": "/campers-for-rent-in-uk/static/css/main.8f1c1a83.css",
+    "main.js": "/campers-for-rent-in-uk/static/js/main.9aa75ec5.js",
+    "static/js/158.5873734c.chunk.js": "/campers-for-rent-in-uk/static/js/158.5873734c.chunk.js",
+    "static/js/952.71b225c0.chunk.js": "/campers-for-rent-in-uk/static/js/952.71b225c0.chunk.js",
+    "static/js/697.b060d9dc.chunk.js": "/campers-for-rent-in-uk/static/js/697.b060d9dc.chunk.js",
+    "static/media/Campervan-Rental-Companies-5.png": "/campers-for-rent-in-uk/static/media/Campervan-Rental-Companies-5.e724a39c64522db989a5.png",
+    "static/media/sprite.svg": "/campers-for-rent-in-uk/static/media/sprite.34d3b93a4b11a8fc5fa5e4d67edfe4b1.svg",
     "index.html": "/campers-for-rent-in-uk/index.html",
-    "main.b96a09e0.css.map": "/campers-for-rent-in-uk/static/css/main.b96a09e0.css.map",
-    "main.df847019.js.map": "/campers-for-rent-in-uk/static/js/main.df847019.js.map",
-    "808.8adcd81c.chunk.js.map": "/campers-for-rent-in-uk/static/js/808.8adcd81c.chunk.js.map"
+    "main.8f1c1a83.css.map": "/campers-for-rent-in-uk/static/css/main.8f1c1a83.css.map",
+    "main.9aa75ec5.js.map": "/campers-for-rent-in-uk/static/js/main.9aa75ec5.js.map",
+    "158.5873734c.chunk.js.map": "/campers-for-rent-in-uk/static/js/158.5873734c.chunk.js.map",
+    "952.71b225c0.chunk.js.map": "/campers-for-rent-in-uk/static/js/952.71b225c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b96a09e0.css",
-    "static/js/main.df847019.js"
+    "static/css/main.8f1c1a83.css",
+    "static/js/main.9aa75ec5.js"
   ]
 }
