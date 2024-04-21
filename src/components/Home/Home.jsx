@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Button, HomeCont, Wrapper, Paragraf } from './Home.styled';
-import { Title } from './Home.styled';
+import { Button, HomeCont, Wrapper, Paragraf, Title } from './Home.styled';
+
 
 const Home = () => {
   return (
     <HomeCont>
+      <img src='../../assets/image/сompanies.png' alt='Campers'/>
       <Wrapper>
         <Title>Camper Van Rental Ukraine</Title>
         <Paragraf>

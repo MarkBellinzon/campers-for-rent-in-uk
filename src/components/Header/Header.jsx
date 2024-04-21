@@ -1,21 +1,21 @@
-import {HeaderWrap, Link, NavList} from './Header.styled';
+import { HeaderWrap, Link, NavList } from './Header.styled';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import {Loader} from 'components/Loader/Loader';
+import { Loader } from 'components/Loader/Loader';
 
-const Header = () => {
+const Header = (closeMenu) => {
   return (
     <>
       <HeaderWrap>
         <NavList>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={closeMenu}>Home</Link>
           </li>
           <li>
-            <Link to="/catalog">Catalog</Link>
+            <Link to="/catalog" onClick={closeMenu}>Catalog</Link>
           </li>
           <li>
-            <Link to="/favorites">Favorites</Link>
+            <Link to="/favorites" onClick={closeMenu}>Favorites</Link>
           </li>
         </NavList>
       </HeaderWrap>

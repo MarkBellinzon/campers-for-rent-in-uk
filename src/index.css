@@ -10,11 +10,11 @@ body {
 
   display: flex;
   position: relative;
-  /* background: #ffd1dc; */
+  background: #e5e5e5;
   color: #ffffff;
   align-items: center;
   justify-content: center;
-  background-image: url('../src/assets/image/Campervan-Rental-Companies-5.png');
+  /* background-image: url('../src/assets/image/Campervan-Rental-Companies-5.png'); */
 
 }
 

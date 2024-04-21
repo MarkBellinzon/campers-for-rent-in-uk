@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from 'components/Header/Header';
 
 const HomePage = lazy(() => import('../pages/HomePage'));
-const CatalogPage = lazy(() => import('../pages/CatalogPage'));
+const CatalogPage = lazy(() => import('../pages/CatalogPage/CatalogPage'));
 const FavoritesPage = lazy(() => import('../pages/FavoritesPage'));
 
 const App = () => {

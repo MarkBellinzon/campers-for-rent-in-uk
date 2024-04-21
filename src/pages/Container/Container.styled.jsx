@@ -14,17 +14,17 @@ export const HomePageWrap = styled.div`
   margin: 0 auto;
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
-`;
+// export const Wrapper = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   gap: 50px;
+//   align-items: center;
+// `;
 
-export const CatalogWrap = styled.div`
- display: flex;
-  gap: 64px;
-`;
+// export const CatalogWrap = styled.div`
+//  display: flex;
+//   gap: 64px;
+// `;
 
 export const LoadMore = styled.button`
   padding: 16px 32px;

@@ -1,16 +1,15 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { CatalogWrap, Wrapper } from './Container/Container.styled';
 import { useEffect, useRef, useState } from 'react';
+import { Title, CatalogWrap, Wrapper } from './CatalogPage.styled';
 import {
   selectVansLoading,
   selectVansError,
   selectVans,
-} from '../redux/vans/selectors';
-import { getVans } from '../redux/vans/operations';
-import CatalogList from 'components/CatalogList/CatalogList';
-import { Loader } from '../components/Loader/Loader';
-import {LoadMore} from '../pages/Container/Container.styled';
-
+} from '../../redux/vans/selectors';
+import { getVans } from '../../redux/vans/operations';
+import CatalogList from '../../components/CatalogList/CatalogList';
+import { Loader } from '../../components/Loader/Loader';
+import { LoadMore } from '../Container/Container.styled';
 
 const CatalogPage = () => {
   const dispatch = useDispatch();
@@ -29,7 +28,6 @@ const CatalogPage = () => {
   useEffect(() => {
     if (vans.length < 4 || vans.length % 4 !== 0) {
       setShowLoadMore(false);
-      
     } else {
       setShowLoadMore(true);
     }
@@ -37,12 +35,12 @@ const CatalogPage = () => {
 
   const handleLoadMore = () => {
     setPage(prevPage => prevPage + 1);
-   
   };
 
   return (
     <CatalogWrap>
-      <Wrapper ref={contRef} >
+      <Title>HGJHGJHGJHGJ</Title>
+      <Wrapper ref={contRef}>
         <CatalogList vans={vans} />
         {showLoadMore && (
           <LoadMore type="button" onClick={handleLoadMore}>
