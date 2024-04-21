@@ -1,4 +1,4 @@
-import FormCont from './BookingForm.styled';
+import {FormCont} from './BookingForm.styled';
 
 
 const BookingForm = () => {

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  width: 160px;
-  height: 56px;
-  border-radius: 200px;
-  background-color: var(--color-button);
-  color: rgba(255, 255, 255, 1);
-  letter-spacing: -0.5%;
+  width: 120px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: yellow;
+  color: red;
+  /* letter-spacing: -0.5%; */
   text-align: center;
   text-transform: uppercase;
   outline: none;
@@ -14,7 +14,7 @@ export const Button = styled.button`
 
   &:hover,
   &:focus {
-    background-color: var(--color-button-hover);
+    background-color: greenyellow;
     transform: scale(1.05);
   }
 
@@ -25,15 +25,30 @@ export const Button = styled.button`
 `;
 
 export const HomeCont = styled.div`
-      display: flex;
+  display: flex;
   flex-direction: column;
-  padding-top: 160px;
-  padding-left: 100px;
-  color:#ffffff;
+  padding-top: 80px;
+  color: #ffffff;
   max-width: 800px;
-  text-align: center;
   align-items: center;
   gap: 30px;
+  justify-content: end;
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
+export const Title = styled.h1`
+  font-size: 40px;
+  color: #005847;
+  text-align: center;
+`;
+
+export const Paragraf = styled.h1`
+  font-size: 20px;
+  color: #2a2a29;
+  text-align: center;
+`;

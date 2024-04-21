@@ -3,13 +3,13 @@ import Home from 'components/Home/Home';
 import { HomePageWrap } from './Container/Container.styled';
 import {Loader} from 'components/Loader/Loader';
 import {
-  selectAdvertsLoading,
-  selectAdvertsError,
+  selectVansLoading,
+  selectVansError,
 } from '../redux/vans/selectors';
 
 const HomePage = () => {
-  const isLoading = useSelector(selectAdvertsLoading);
-  const error = useSelector(selectAdvertsError);
+  const isLoading = useSelector(selectVansLoading);
+  const error = useSelector(selectVansError);
   return (
     <HomePageWrap>
       <Home />

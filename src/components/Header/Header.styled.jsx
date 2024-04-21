@@ -25,6 +25,7 @@ export const Link = styled(NavLink)`
   padding: 6px 10px;
   border-radius: 10px;
   text-decoration: none;
+  color: #005847;
   transition: box-shadow 0.5s, color 0.5s, transform 0.5s  ease-in-out;;
 
   &.active {     

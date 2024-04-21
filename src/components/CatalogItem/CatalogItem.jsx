@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Icon from '../Icon';
+import Icon from 'components/Icon/Icon';
 import { selectFavorites } from '../../redux/vans/selectors';
 import {addToFavorites, removeFromFavorites} from '../../redux/vans/slice'
 import {
